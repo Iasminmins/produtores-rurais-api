@@ -1,9 +1,10 @@
 🌾 Produtores Rurais API
-A Produtores Rurais API é uma aplicação desenvolvida para facilitar o gerenciamento de produtores rurais. O sistema permite cadastrar, atualizar e consultar informações essenciais sobre os produtores, promovendo uma gestão mais eficiente e organizada.
 
+A Produtores Rurais API é uma aplicação desenvolvida para facilitar o gerenciamento de produtores rurais. O sistema permite cadastrar, atualizar e consultar informações essenciais sobre os produtores, promovendo uma gestão mais eficiente e organizada.
 Este projeto foi criado utilizando NestJS, um framework robusto para aplicações Node.js, seguindo os princípios de arquitetura modular, garantindo escalabilidade e facilidade de manutenção.
 
 🎯 Objetivo do Projeto
+
 O principal objetivo da API é fornecer um sistema seguro e eficiente para armazenar e manipular dados de produtores rurais, permitindo que empresas e instituições do setor agrícola possam monitorar e gerenciar informações com mais precisão.
 
 🔹 Recursos Principais
@@ -14,6 +15,7 @@ O principal objetivo da API é fornecer um sistema seguro e eficiente para armaz
 ✅ Integração com banco de dados PostgreSQL
 
 🏗️ Arquitetura do Projeto
+
 A estrutura do projeto segue a organização recomendada pelo NestJS, garantindo modularização e separação de responsabilidades:
 
 📂 src/ - Contém o código-fonte do projeto
@@ -26,16 +28,18 @@ A estrutura do projeto segue a organização recomendada pelo NestJS, garantindo
 📂 test/ - Arquivos para testes automatizados
 
 🛠️ Tecnologias Utilizadas
+
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 🔹 Node.js - Ambiente de execução JavaScript
 🔹 NestJS - Framework para aplicações escaláveis em Node.js
-🔹 Typeorm-
+🔹 TypeOrm- ORM para manipulação eficiente do banco de dados, suporte a migrations, entities, repositories e Query Builder
 🔹 TypeScript - Tipagem estática para um código mais seguro
 🔹 PostgreSQL - Banco de dados relacional robusto
 🔹 Jest - Framework de testes automatizados
 
  Pré-requisitos e Configuração
+
 📌 Informe o que é necessário para rodar o projeto. Por exemplo:
 
 Node.js instalado (>= versão 16)
