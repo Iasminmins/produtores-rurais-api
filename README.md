@@ -1,98 +1,91 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+🌾 Produtores Rurais API
+A Produtores Rurais API é uma aplicação desenvolvida para facilitar o gerenciamento de produtores rurais. O sistema permite cadastrar, atualizar e consultar informações essenciais sobre os produtores, promovendo uma gestão mais eficiente e organizada.
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Este projeto foi criado utilizando NestJS, um framework robusto para aplicações Node.js, seguindo os princípios de arquitetura modular, garantindo escalabilidade e facilidade de manutenção.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+🎯 Objetivo do Projeto
+O principal objetivo da API é fornecer um sistema seguro e eficiente para armazenar e manipular dados de produtores rurais, permitindo que empresas e instituições do setor agrícola possam monitorar e gerenciar informações com mais precisão.
 
-## Description
+🔹 Recursos Principais
+✅ Cadastro de novos produtores rurais
+✅ Atualização de informações dos produtores
+✅ Listagem de todos os produtores cadastrados
+✅ Consulta detalhada de um produtor específico
+✅ Integração com banco de dados PostgreSQL
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+🏗️ Arquitetura do Projeto
+A estrutura do projeto segue a organização recomendada pelo NestJS, garantindo modularização e separação de responsabilidades:
 
-## Project setup
+📂 src/ - Contém o código-fonte do projeto
+    📂 producer/ - Módulo responsável pelo CRUD de produtores
+        📂 dto/ - Contém os Data Transfer Objects (DTOs) para validação de dados
+        📄 producer.controller.ts - Controlador que gerencia as rotas da API
+        📄 producer.service.ts - Serviço que contém as regras de negócio
+        📄 producer.module.ts - Módulo que agrupa os componentes do domínio
+    📂 common/ - Contém utilitários e configurações globais
+📂 test/ - Arquivos para testes automatizados
 
-```bash
-$ npm install
-```
+🛠️ Tecnologias Utilizadas
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-## Compile and run the project
+🔹 Node.js - Ambiente de execução JavaScript
+🔹 NestJS - Framework para aplicações escaláveis em Node.js
+🔹 Typeorm-
+🔹 TypeScript - Tipagem estática para um código mais seguro
+🔹 PostgreSQL - Banco de dados relacional robusto
+🔹 Jest - Framework de testes automatizados
 
-```bash
-# development
-$ npm run start
+ Pré-requisitos e Configuração
+📌 Informe o que é necessário para rodar o projeto. Por exemplo:
 
-# watch mode
-$ npm run start:dev
+Node.js instalado (>= versão 16)
 
-# production mode
-$ npm run start:prod
-```
+PostgreSQL configurado
 
-## Run tests
+Variáveis de ambiente no .env
 
-```bash
-# unit tests
-$ npm run test
+Exemplo de configuração do .env:
 
-# e2e tests
-$ npm run test:e2e
+env
 
-# test coverage
-$ npm run test:cov
-```
+DATABASE_HOST=localhost
+DATABASE_PORT=5432
+DATABASE_USER=api-rural
+DATABASE_PASSWORD= *******
+DATABASE_NAME=produtores_db
 
-## Deployment
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+ Como Rodar o Projeto
+📌 Passo a passo para instalar e executar:
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+Clone o repositório:
+git clone https://github.com/Iasminmins/produtores-rurais-api.git
 
-```bash
-$ npm install -g mau
-$ mau deploy
-```
+Entre no diretório do projeto:
+cd produtores-rurais-api
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+Instale as dependências:
+npm install
 
-## Resources
+Execute as migrações do banco de dados:
+npm run migration:run
 
-Check out a few resources that may come in handy when working with NestJS:
+Inicie o servidor:
+npm run start
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+Se quiser rodar no modo de desenvolvimento com recarregamento automático:
+npm run start:dev
 
-## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Endpoints da API
+📌 Liste os principais endpoints e como utilizá-los.
 
-## Stay in touch
+Produtores (/producers)
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+GET /producers → Retorna todos os produtores cadastrados
 
-## License
+POST /producers → Cadastra um novo produtor rural
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+PUT /producers/:id → Atualiza um produtor específico
+
+DELETE /producers/:id → Remove um produtor
