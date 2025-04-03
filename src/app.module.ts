@@ -9,7 +9,7 @@ import { ProducerModule } from './producer/producer.module';
       type: 'postgres',
       host: process.env.DB_HOST || 'localhost',
       port: parseInt(process.env.DB_PORT) || 5432,
-      username: process.env.DB_USERNAME || 'api-rurap',
+      username: process.env.DB_USERNAME || 'api-rural',
       password: process.env.DB_PASSWORD || '81204413',
       database: process.env.DB_DATABASE || 'produtores',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
