@@ -40,7 +40,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
  Pré-requisitos e Configuração
 
-📌 Informe o que é necessário para rodar o projeto. Por exemplo:
+📌  É necessário para rodar o projeto.
 
 Node.js instalado (>= versão 16)
 
