@@ -55,9 +55,9 @@ Para rodar o projeto, é necessário ter:
 ```env
 DATABASE_HOST=localhost
 DATABASE_PORT=5432
-DATABASE_USER=api-rural
-DATABASE_PASSWORD=*******
-DATABASE_NAME=produtores_db
+DATABASE_USER=postgre
+DATABASE_PASSWORD=******
+DATABASE_NAME=api_rural
 ```
 
 ## 🚀 Como Rodar o Projeto
